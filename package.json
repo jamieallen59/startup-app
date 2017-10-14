@@ -1,0 +1,19 @@
+{
+  "name": "startup-app",
+  "version": "1.0.0",
+  "description": "A project for quickly starting up projects with my favoured technologies.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamieallen59/startup-app.git"
+  },
+  "author": "Jamie Allen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamieallen59/startup-app/issues"
+  },
+  "homepage": "https://github.com/jamieallen59/startup-app#readme"
+}
