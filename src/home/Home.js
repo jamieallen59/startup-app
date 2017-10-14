@@ -1,12 +1,13 @@
+//@flow
 import React from 'react'
-import PropTypes from 'prop-types'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Provider } from 'react-redux'
 
-export default class extends React.Component {
-  static propTypes = {
-    example: PropTypes.string
-  }
+type Props = {
+  example: string,
+};
+
+export default class extends React.Component<Props> {
   static defaultProps = {
     example: 'Tadaaa'
   }
