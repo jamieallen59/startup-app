@@ -4,7 +4,8 @@
   "description": "A project for quickly starting up projects with my favoured technologies.",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start:dev": "NODE_ENV=development webpack-dev-server --progress --colors --hot --inline"
   },
   "repository": {
     "type": "git",
@@ -25,8 +26,18 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-redux": "^5.0.6",
-    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-observable": "^0.16.0",
+    "rxjs": "^5.4.3",
     "webpack": "^3.7.1",
     "webpack-sha-hash": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "react-hot-loader": "^3.0.0",
+    "webpack-dev-server": "^2.9.1"
   }
 }
