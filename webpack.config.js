@@ -10,7 +10,10 @@ module.exports = {
     './src/index.js'
   ],
   resolve: {
-    extensions: ['.js', '.js', '.scss']
+    extensions: ['.js', '.js', '.scss'],
+    alias: {
+      __counter: path.resolve(__dirname, 'src/counter/')
+    }
   },
   output: {
     filename: 'index.js',

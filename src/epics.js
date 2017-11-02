@@ -1,10 +1,5 @@
 import { combineEpics } from 'redux-observable'
-import { of } from 'rxjs/observable/of'
-import 'rxjs/add/operator/map'
 
-export const exampleEpic = action$ =>
-  action$.ofType('EXAMPLE').map(() => {
-    return of()
-  })
+import counterEpics from '__counter/epics'
 
-export default combineEpics(exampleEpic)
+export default combineEpics(counterEpics)

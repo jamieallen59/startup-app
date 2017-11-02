@@ -6,7 +6,8 @@ import rootEpic from './epics'
 
 const epicMiddleware = createEpicMiddleware(rootEpic)
 
-const middleware = [epicMiddleware]
+// const middleware = [epicMiddleware]
+const middleware = []
 
 // To allow chrome extensions Redux devtools
 const composeEnhancers =
