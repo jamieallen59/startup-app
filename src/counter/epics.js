@@ -4,10 +4,7 @@ import { of } from 'rxjs/observable/of'
 import 'rxjs/add/operator/map'
 
 import { incrementCounter, decrementCounter } from './actions'
-import {
-  INCREMENT_COUNTER,
-  DECREMENT_COUNTER
-} from './constants'
+import { INCREMENT_COUNTER, DECREMENT_COUNTER } from './constants'
 
 // Only here for example
 export const incrementCounterEpic = action$ =>
@@ -20,9 +17,5 @@ export const decrementCounterEpic = action$ =>
     return decrementCounter()
   })
 
-
 export default action$ =>
-  merge(
-    incrementCounterEpic(action$),
-    decrementCounterEpic(action$),
-  )
+  merge(incrementCounterEpic(action$), decrementCounterEpic(action$))

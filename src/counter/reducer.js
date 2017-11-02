@@ -1,8 +1,4 @@
-
-import {
-  INCREMENT_COUNTER,
-  DECREMENT_COUNTER
-} from './constants'
+import { INCREMENT_COUNTER, DECREMENT_COUNTER } from './constants'
 
 export const initialState = {
   counter: 0
