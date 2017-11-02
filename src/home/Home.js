@@ -2,10 +2,11 @@
 import React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Provider } from 'react-redux'
+import uuidv4 from 'uuid/v4'
 
 type Props = {
   example: string,
-};
+}
 
 export default class extends React.Component<Props> {
   static defaultProps = {
@@ -16,8 +17,12 @@ export default class extends React.Component<Props> {
     const { example } = this.props
 
     return ([
-      <div>{`${example} number one`}</div>,
-      <div>{`${example} number two`}</div>
+      <div key={uuidv4()}>
+        {`${example} number one`}
+      </div>,
+      <div key={uuidv4()}>
+        {`${example} number two`}
+      </div>
     ])
   }
 }

@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
 import { Provider } from 'react-redux'
 
-import storeConfig from './store'
+import configureStore from './store'
 import Root from './Root'
 
-const { store, history } = storeConfig()
+const store = configureStore()
 
 const render = (Component, store) => {
   ReactDOM.render(
@@ -19,7 +19,7 @@ const render = (Component, store) => {
   )
 }
 
-render(Root)
+render(Root, store)
 
 // Webpack Hot Module Replacement API
 if (module.hot) {
