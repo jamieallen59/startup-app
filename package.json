@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "prettify": "prettier -l src/**/*.js",
+    "prettify": "npm run -s prettify:preview -- --write",
+    "prettify:preview": "git ls-files | grep -E '.*\\.js?$' | xargs prettier -l",
     "start:dev": "NODE_ENV=development webpack-dev-server --progress --colors --hot --inline"
   },
   "repository": {

@@ -1,6 +1,6 @@
-const path = require('path');
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: [
@@ -10,7 +10,7 @@ module.exports = {
     './src/index.js'
   ],
   resolve: {
-    extensions: [".js", ".js", ".scss"]
+    extensions: ['.js', '.js', '.scss']
   },
   output: {
     filename: 'index.js',
@@ -28,9 +28,7 @@ module.exports = {
       {
         test: /\.js?$/,
         exclude: /node_modules/,
-        use: [
-          'babel-loader'
-        ]
+        use: ['babel-loader']
       },
       {
         test: /.scss$/,
@@ -51,10 +49,7 @@ module.exports = {
       },
       {
         test: /\.svg$/,
-        use: [
-          'babel-loader',
-          'react-svg-loader'
-        ]
+        use: ['babel-loader', 'react-svg-loader']
       }
     ]
   },
@@ -64,5 +59,5 @@ module.exports = {
       filename: 'index.html'
     }),
     new webpack.HotModuleReplacementPlugin()
-  ],
-};
+  ]
+}

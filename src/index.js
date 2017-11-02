@@ -15,7 +15,7 @@ const render = (Component, store) => {
         <Component />
       </Provider>
     </AppContainer>,
-    document.getElementById('app'),
+    document.getElementById('app')
   )
 }
 
@@ -23,5 +23,7 @@ render(Root, store)
 
 // Webpack Hot Module Replacement API
 if (module.hot) {
-  module.hot.accept('./Root', () => { render(App) })
+  module.hot.accept('./Root', () => {
+    render(App)
+  })
 }

@@ -1,8 +1,8 @@
-import { combineReducers } from 'redux';
+import { combineReducers } from 'redux'
 
 export const initialState = {
-    example: {}
-};
+  example: {}
+}
 
 const example = (state = initialState, action) => {
   switch (action.type) {
@@ -19,5 +19,5 @@ const example = (state = initialState, action) => {
 }
 
 export default combineReducers({
-    example
+  example
 })
