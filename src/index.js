@@ -24,6 +24,6 @@ render(Root, store)
 // Webpack Hot Module Replacement API
 if (module.hot) {
   module.hot.accept('./Root', () => {
-    render(App)
+    render(Root, store)
   })
 }
